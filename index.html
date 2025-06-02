@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abdul Hakim - Portofolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0f172a;
+      color: #f1f5f9;
+      scroll-behavior: smooth;
+    }
+    header {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(to bottom right, #0ea5e9, #38bdf8);
+      color: #fff;
+    }
+    nav {
+      background-color: #1e293b;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 10px 0;
+    }
+    nav a {
+      color: #cbd5e1;
+      text-decoration: none;
+    }
+    nav a:hover {
+      color: #38bdf8;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #38bdf8;
+    }
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background-color: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    footer {
+      background-color: #0f172a;
+      text-align: center;
+      padding: 30px;
+      color: #94a3b8;
+    }
+    .button {
+      background-color: #38bdf8;
+      color: #0f172a;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+    }
+    .button:hover {
+      background-color: #0ea5e9;
+    }
+  </style>
+</head>
+<body>
+
+  <header id="home">
+    <h1>Hi, I'm Hakim</h1>
+    <p>Turning Data into Something Usefull</p>
+    <a href="#projects" class="button">View My Projects</a>
+  </header>
+
+  <nav>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card"><strong>Data Entry</strong><p>More than 5 years experience in data entry in logistics section</p></div>
+      <div class="card"><strong>System Analyst</strong><p>analyzes and designs information systems to help organizations operate more efficiently and effectively.</p></div>
+      <div class="card"><strong>SQL</strong><p>querying, joins, window functions</p></div>
+      <div class="card"><strong>Python</strong><p>Pandas, NumPy, Matplotlib, Seaborn</p></div>
+      <div class="card"><strong>Tableau</strong><p>Dashboard design, storytelling with data</p></div>
+      <div class="card"><strong>Excel</strong><p>Pivots, formulas, Data cleansing</p></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Retail Sales Forecasting</h3>
+        <p>Built a time series model to forecast monthly sales for a chain of retail stores.</p>
+        <a class="button" href="#">View Dashboard</a>
+      </div>
+      <div class="card">
+        <h3>Flight Delay Prediction</h3>
+        <p>Used classification algorithms to predict delays based on weather and carrier data.</p>
+        <a class="button" href="#">View Notebook</a>
+      </div>
+      <div class="card">
+        <h3>Sentiment Analysis</h3>
+        <p>Analyzed customer reviews using NLP techniques to extract key themes and emotions.</p>
+        <a class="button" href="#">View Report</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:kamu@email.com" style="color: #38bdf8;">hakim.alfatih96@gmail.com</a></p>
+    <p>Whatsapp: <a href="https://linkedin.com/in/namakamu" target="_blank" style="color: #38bdf8;">+6285171240104</a></p>
+    <p>GitHub: <a href="https://github.com/namakamu" target="_blank" style="color: #38bdf8;">github.com/namakamu</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Abdul Hakim. Built with ❤️ and data.
+  </footer>
+
+</body>
+</html>

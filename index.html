@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Abdul Hakim - Portofolio</title>
+  <title>Hakim - Airdrop Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -16,119 +16,171 @@
     header {
       text-align: center;
       padding: 80px 20px;
-      background: linear-gradient(to bottom right, #0ea5e9, #38bdf8);
-      color: #fff;
+      background: linear-gradient(to bottom right, #22c55e, #4ade80);
+      color: #022c22;
     }
     nav {
       background-color: #1e293b;
       display: flex;
       justify-content: center;
       gap: 2rem;
-      padding: 10px 0;
+      padding: 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
     nav a {
       color: #cbd5e1;
       text-decoration: none;
+      font-weight: 500;
     }
     nav a:hover {
-      color: #38bdf8;
+      color: #4ade80;
     }
     section {
       padding: 60px 20px;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
     }
     h2 {
-      color: #38bdf8;
+      color: #4ade80;
+      margin-bottom: 20px;
     }
-    .skills, .projects {
+    .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 20px;
     }
     .card {
       background-color: #1e293b;
       padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      border-radius: 14px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+      transition: transform 0.2s;
     }
-    footer {
-      background-color: #0f172a;
-      text-align: center;
-      padding: 30px;
-      color: #94a3b8;
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .status {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+    .active {
+      background-color: #22c55e;
+      color: #022c22;
+    }
+    .waiting {
+      background-color: #facc15;
+      color: #422006;
+    }
+    .ended {
+      background-color: #ef4444;
+      color: #450a0a;
     }
     .button {
-      background-color: #38bdf8;
-      color: #0f172a;
-      padding: 10px 20px;
-      border: none;
+      background-color: #4ade80;
+      color: #022c22;
+      padding: 8px 16px;
       border-radius: 8px;
       text-decoration: none;
       display: inline-block;
-      margin-top: 10px;
+      margin-top: 12px;
+      font-size: 14px;
     }
     .button:hover {
-      background-color: #0ea5e9;
+      background-color: #22c55e;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #94a3b8;
+      border-top: 1px solid #1e293b;
     }
   </style>
 </head>
 <body>
 
   <header id="home">
-    <h1>Hi, I'm Hakim</h1>
-    <p>Turning Data into Something Usefull</p>
-    <a href="#projects" class="button">View My Projects</a>
+    <h1>🚀 Airdrop Journey</h1>
+    <p>Tracking Web3 Airdrops, Testnets, and Early Opportunities</p>
+    <a href="#airdrop" class="button">View Active Airdrops</a>
   </header>
 
   <nav>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
+    <a href="#strategy">Strategy</a>
+    <a href="#airdrop">Airdrop Projects</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills">
-      <div class="card"><strong>Data Entry</strong><p>More than 5 years experienced in data entry in logistics section</p></div>
-      <div class="card"><strong>System Analyst</strong><p>Analyzes and Designs information systems to help organizations operate more efficiently and effectively.</p></div>
-      <div class="card"><strong>SQL</strong><p>Querying, Joins, Window functions</p></div>
-      <div class="card"><strong>Python</strong><p>Pandas, NumPy, Matplotlib, Seaborn</p></div>
-      <div class="card"><strong>Tableau</strong><p>Dashboard design, storytelling with data</p></div>
-      <div class="card"><strong>Excel</strong><p>Pivots, formulas, Data cleansing</p></div>
+  <section id="strategy">
+    <h2>My Airdrop Strategy</h2>
+    <div class="grid">
+      <div class="card">
+        <strong>Wallet Management</strong>
+        <p>Using multiple EVM & non-EVM wallets with proper separation and activity tracking.</p>
+      </div>
+      <div class="card">
+        <strong>Testnet Focus</strong>
+        <p>Active participation in incentivized testnets and early ecosystem programs.</p>
+      </div>
+      <div class="card">
+        <strong>DeFi & DePIN</strong>
+        <p>Prioritizing DeFi infra, L2s, modular chains, and DePIN-related projects.</p>
+      </div>
+      <div class="card">
+        <strong>On-chain Activity</strong>
+        <p>Bridging, swaps, staking, NFT minting, and governance participation.</p>
+      </div>
     </div>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects">
+  <section id="airdrop">
+    <h2>Ongoing Airdrop Projects</h2>
+    <div class="grid">
+
       <div class="card">
-        <h3>Retail Sales Forecasting</h3>
-        <p>Built a time series model to forecast monthly sales for a chain of retail stores.</p>
-        <a class="button" href="#">View Dashboard</a>
+        <span class="status active">Active</span>
+        <h3>Monad</h3>
+        <p>High-performance L1 EVM-compatible blockchain. Participating in testnet & ecosystem tasks.</p>
+        <a class="button" href="#">Task Dashboard</a>
       </div>
+
       <div class="card">
-        <h3>Flight Delay Prediction</h3>
-        <p>Used classification algorithms to predict delays based on weather and carrier data.</p>
-        <a class="button" href="#">View Notebook</a>
+        <span class="status active">Active</span>
+        <h3>Settlr</h3>
+        <p>Pre-launch points program with social & trading activities before TGE.</p>
+        <a class="button" href="#">Points Tracker</a>
       </div>
+
       <div class="card">
-        <h3>Sentiment Analysis</h3>
-        <p>Analyzed customer reviews using NLP techniques to extract key themes and emotions.</p>
-        <a class="button" href="#">View Report</a>
+        <span class="status waiting">Waiting Snapshot</span>
+        <h3>Dora Factory</h3>
+        <p>DAO-as-a-service & governance infra. Participated in ecosystem interaction.</p>
+        <a class="button" href="#">On-chain Activity</a>
       </div>
+
+      <div class="card">
+        <span class="status ended">Ended</span>
+        <h3>LayerZero</h3>
+        <p>Cross-chain messaging protocol. Interaction completed before snapshot.</p>
+        <a class="button" href="#">Summary</a>
+      </div>
+
     </div>
   </section>
 
   <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:kamu@email.com" style="color: #38bdf8;">hakim.alfatih96@gmail.com</a></p>
-    <p>Whatsapp: <a href="https://linkedin.com/in/namakamu" target="_blank" style="color: #38bdf8;">+6285171240104</a></p>
-    <p>GitHub: <a href="https://github.com/haakaffmim" target="_blank" style="color: #38bdf8;">github.com/haakaffmim</a></p>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:hakim.alfatih96@gmail.com" style="color:#4ade80;">hakim.alfatih96@gmail.com</a></p>
+    <p>Telegram / WhatsApp: <a href="#" style="color:#4ade80;">+6285171240104</a></p>
+    <p>GitHub: <a href="https://github.com/haakaffmim" target="_blank" style="color:#4ade80;">github.com/haakaffmim</a></p>
   </section>
 
   <footer>
-    &copy; 2025 Abdul Hakim. Built with ❤️ and data.
+    &copy; 2025 Abdul Hakim — Documenting My Web3 Airdrop Journey 🌱
   </footer>
 
 </body>
